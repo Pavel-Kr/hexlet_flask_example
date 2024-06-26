@@ -5,4 +5,4 @@ install:
 	poetry install
 
 run:
-	poetry run gunicorn --workers=4 --bind=127.0.0.1:8000 hexlet_flask_example.example:app
+	poetry run gunicorn --workers=4 hexlet_flask_example.example:app
