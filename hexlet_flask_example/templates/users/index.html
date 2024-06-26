@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+</head>
+<body>
+    {% if email %}
+    <form action="/logout" method="post">
+        <input type="submit" value="Logout">
+    </form>
+    {% endif %}
+    <h1>Users</h1>
+    {% if messages %}
+    <div class="flashes">
+        {% for category, message in messages %}
+        <div class="{{ category }}">{{ message }}</div>
+        {% endfor %}
+    </div>
+    {% endif %}
+    <form action="{{ url_for('users_get') }}" method="get">
+        <input type="search" name="user" value="{{ search }}">
+        <input type="submit" value="Search">
+    </form>
+    <ul>
+        {% for user in users %}
+        <li><a href="{{ url_for('users_id_get', id=user.id) }}"><i>{{ user.name }}</i></a></li>
+        {% endfor %}
+    </ul>
+
+    <br>
+
+    <a href="{{ url_for('users_new_get') }}">Add new user</a>
+    <br>
+    {% if not email %}
+    <a href="/login">Login</a>
+    {% endif %}
+</body>
+</html>

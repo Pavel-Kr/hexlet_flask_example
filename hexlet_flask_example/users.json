@@ -1,0 +1,50 @@
+{
+  "largest_id": 16,
+  "users": [
+    {
+      "id": 1,
+      "name": "mike",
+      "email": "mike@example.com"
+    },
+    {
+      "id": 2,
+      "name": "mishel",
+      "email": "mishel@example.com"
+    },
+    {
+      "id": 3,
+      "name": "adel",
+      "email": "adel@example.com"
+    },
+    {
+      "id": 4,
+      "name": "keks",
+      "email": "keks@example.com"
+    },
+    {
+      "id": 5,
+      "name": "kamila",
+      "email": "kamila@example.com"
+    },
+    {
+      "id": 6,
+      "name": "pablo",
+      "email": "pablo@email.com"
+    },
+    {
+      "id": 7,
+      "name": "gavrilo",
+      "email": "habibi@mail.hu"
+    },
+    {
+      "id": 8,
+      "name": "abobus",
+      "email": "sus@amog.us"
+    },
+    {
+      "id": 13,
+      "name": "aboba",
+      "email": "biba@boba.bu"
+    }
+  ]
+}

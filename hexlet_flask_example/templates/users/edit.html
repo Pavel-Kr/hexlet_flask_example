@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit user</title>
+</head>
+<body>
+    <h1>Edit user</h1>
+    <form action="{{ url_for('patch_user', id=user.id) }}" method="post">
+        {% include "users/form.html" %}
+        <div>
+            <input type="submit" value="Confirm">
+        </div>
+    </form>
+</body>
+</html>
